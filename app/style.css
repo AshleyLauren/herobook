@@ -1,0 +1,99 @@
+/*Color Palette:
+#ff0000 Red
+#f0e68c	Off-Yellow
+#ffd700 Gold-Yellow
+#228b22 Green
+#e0e0e0 Light Gray
+See: http://www.color-hex.com/color-palette/2445*/
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+}
+
+p, a, ul, li {
+
+	font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 599px) {
+   
+    #nav {
+        position: fixed; /* or choose `absolute` depending on desired behavior*/
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        left: -340px;
+        transition: transform .3s ease-in-out;
+    }
+   
+}.toggle {
+    display: none;
+  }
+
+  #nav:target {
+    transform: translateX(340px);
+  }
+
+@media only screen and (min-width: 600px) {
+     
+  /* grid */
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+   
+  /* specific item styles */
+ 
+  .container header,
+  .container nav,
+  .container footer {
+    grid-column: span 2;
+  }
+  .container section {
+    grid-column: span 1;
+  }
+   
+}
+
+h1 {
+	color: green;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.container > * {
+  color: #353535;
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding: 20px;
+  background: #e0e0e0;
+}
+ 
+.container nav {
+  background: #228b22;
+}
+ 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+nav a {
+  color: #f0e68c
+}
+ 
+nav a:hover {
+  text-decoration: none;
+}
+
+/* nav styles */
+nav ul li {
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+
