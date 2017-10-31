@@ -67,4 +67,3 @@ INSERT INTO ability_hero (hero_id, ability_id) VALUES (3, 1);
 INSERT INTO ability_hero (hero_id, ability_id) VALUES (4, 2);
 INSERT INTO ability_hero (hero_id, ability_id) VALUES (4, 6);
 INSERT INTO ability_hero (hero_id, ability_id) VALUES (5, 7);
- 
